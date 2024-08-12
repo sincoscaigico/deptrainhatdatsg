@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết Quả Học Tập</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+        .pass {
+            background-color: yellow;
+            color: black;
+        }
+        .fail {
+            background-color: red;
+            color: white;
+        }
+        .header {
+            background-color: lightgray;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">KẾT QUẢ HỌC TẬP</div>
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Toán</th>
+            <th>Lý</th>
+            <th>Hóa</th>
+            <th>Ngữ văn</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Lê Bảo Ngân</td>
+            <td>8</td>
+            <td>7</td>
+            <td>9</td>
+            <td>6</td>
+            <td class="pass">Đạt</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Kiều Ngân</td>
+            <td>4</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
+            <td class="fail">Không đạt</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Quốc Tiến</td>
+            <td>9</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+            <td class="pass">Đạt</td>
+        </tr>
+        <tr>
+            <td>Tổng số học sinh đạt</td>
+            <td colspan="5">2</td>
+        </tr>
+    </table>
+</body>
+</html>

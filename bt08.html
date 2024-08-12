@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .media-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .media-container div {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CHƯƠNG TRÌNH NGHE NHẠC</h1>
+<audio controls>
+    <source src="Snaptik.app_7275580112588852482.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="media-container">
+    <div>
+        <h2>CHƯƠNG TRÌNH XEM VIDEO</h2>
+        <video width="100%" controls>
+            <source src="5421984809050425291.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div>
+        <h2>XEM VIDEO TRÊN YOUTUBE</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=ncrMqNqTRPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>

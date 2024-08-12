@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Kiểm Tra Chương 2 - Đăng ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .header {
+            text-align: right;
+        }
+        form {
+            background-color: #ffffcc;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BÀI KIỂM TRA CHƯƠNG 2</h1>
+        <div class="header">
+            <p><strong>Môn học:</strong> Ứng dụng Web</p>
+            <p><strong>Mã số sinh viên:</strong> 2351010096</p>
+            <p><strong>Họ và tên:</strong> Trần Nguyên Khang</p>
+        </div>
+        <h2>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h2>
+        <div class="footer">
+            <a href="#">Trang chủ</a> | <a href="#">Nội dung môn học</a> | <a href="#">Đăng ký</a>
+        </div>
+        <form>
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required placeholder="Nhập tên đăng nhập">
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required placeholder="Nhập mật khẩu">
+
+            <label for="gender">Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Nam
+            <input type="radio" id="female" name="gender" value="female" required> Nữ
+
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email">
+
+            <label for="programming">Ngôn ngữ lập trình yêu thích:</label>
+            <select id="programming" name="programming" required>
+                <option value="c++">C++</option>
+                <option value="c#">C#</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+
+            <label for="rules">Quy định khi tham gia diễn đàn:</label>
+            <textarea id="rules" name="rules" rows="4" readonly>
+- Không được phát ngôn tục, không được chia sẻ thông tin nhạy cảm.
+- Không đăng tải nội dung vi phạm pháp luật.
+            </textarea>
+
+            <div class="buttons">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Hủy">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
